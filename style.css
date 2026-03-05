@@ -1,0 +1,52 @@
+.logo{
+    display: flex;
+    padding-top: 20%;
+    width: 50px;
+    opacity: 1;
+}
+.logo:hover{
+	-webkit-animation: flash 1.5s;
+	animation: flash 2.5s;
+ 
+}@-webkit-keyframes flash {
+        0% {
+            opacity: .4;
+        }
+        100% {
+            opacity: 1;
+        }
+}
+@keyframes flash {
+    0% {
+        opacity: .4;
+    }
+    100% {
+        opacity: 1;
+    }
+    }
+
+.navbarUL{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+    font-family: "Roboto", sans-serif;
+    
+}
+.navbarUL .left{
+    float: left;
+}
+.navbarUL .right{
+    float: right;
+}
+.navbarUL li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navbarUL li a:hover {
+    background-color: #111111;
+  }
