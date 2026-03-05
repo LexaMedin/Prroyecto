@@ -50,3 +50,19 @@
 .navbarUL li a:hover {
     background-color: #111111;
   }
+
+.sect1{
+    background-color:rgba(175, 172, 172, 0.562);
+}
+.sect1 :only-child{
+    margin: 1%;
+}
+
+.art1{ 
+    list-style-type: none;
+    display: flex;
+    margin: 1%;
+}
+.art1 li aside{
+ justify-content: center;
+}
