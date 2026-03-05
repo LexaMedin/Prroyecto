@@ -61,8 +61,25 @@
 .art1{ 
     list-style-type: none;
     display: flex;
+    flex-direction: row;
+    
+}
+.art1 li{
     margin: 1%;
 }
-.art1 li aside{
- justify-content: center;
+.art1 aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.sect2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.sect2 .card{
+    margin: 3%;
 }
