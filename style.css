@@ -1,9 +1,21 @@
+body{
+    font-family: "Roboto", sans-serif;
+    
+}
+h1{
+    color: white !important;
+}
+.fondo{
+    background-color: black !important;
+}
 .logo{
     display: flex;
-    padding-top: 20%;
+    padding-top: 5%;
     width: 50px;
     opacity: 1;
+   
 }
+
 .logo:hover{
 	-webkit-animation: flash 1.5s;
 	animation: flash 2.5s;
@@ -24,14 +36,18 @@
         opacity: 1;
     }
     }
-
+.card-body{
+    display: flex;
+    flex-direction: column;
+     justify-content: center !important;
+    align-items: center !important;
+}
 .navbarUL{
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333333;
-    font-family: "Roboto", sans-serif;
+    background-color: rgb(132, 23, 29);
     
 }
 .navbarUL .left{
@@ -52,7 +68,7 @@
   }
 
 .sect1{
-    background-color:rgba(175, 172, 172, 0.562);
+    background-color:rgba(234, 211, 177);
 }
 .sect1 :only-child{
     margin: 1%;
@@ -66,6 +82,18 @@
 }
 .art1 li{
     margin: 1%;
+    display: flex;
+    flex-direction: row;
+}
+.AboutusImg{
+    padding-left: 50px;
+    
+}
+.AboutusImg img{
+    width: 400px;
+}
+.AboutusText{
+    text-align: justify;
 }
 .art1 aside{
     display: flex;
