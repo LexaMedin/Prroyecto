@@ -1,6 +1,6 @@
 body{
     font-family: "Roboto", sans-serif;
-    
+
 }
 h1{
     color: white !important;
@@ -13,13 +13,13 @@ h1{
     padding-top: 5%;
     width: 50px;
     opacity: 1;
-   
+
 }
 
 .logo:hover{
 	-webkit-animation: flash 1.5s;
 	animation: flash 2.5s;
- 
+
 }@-webkit-keyframes flash {
         0% {
             opacity: .4;
@@ -39,7 +39,7 @@ h1{
 .card-body{
     display: flex;
     flex-direction: column;
-     justify-content: center !important;
+    justify-content: center !important;
     align-items: center !important;
 }
 .navbarUL{
@@ -48,7 +48,7 @@ h1{
     padding: 0;
     overflow: hidden;
     background-color: rgb(132, 23, 29);
-    
+
 }
 .navbarUL .left{
     float: left;
@@ -62,6 +62,7 @@ h1{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+
 }
 .navbarUL li a:hover {
     background-color: #111111;
@@ -74,11 +75,11 @@ h1{
     margin: 1%;
 }
 
-.art1{ 
+.art1{
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    
+
 }
 .art1 li{
     margin: 1%;
@@ -87,7 +88,7 @@ h1{
 }
 .AboutusImg{
     padding-left: 50px;
-    
+
 }
 .AboutusImg img{
     width: 400px;
@@ -110,4 +111,18 @@ h1{
 }
 .sect2 .card{
     margin: 3%;
+}
+/*media querys for responsive*/
+/* Exact height */
+
+/* Minimum height */
+@media (min-width: 480px) and (max-width:768px) {
+  .AboutusImg{
+    width: 150px!important;
+    margin:  5% 5% !important;
+
+  }
+  .imgSize{
+    width: 150px!important;
+  }
 }
