@@ -1,14 +1,17 @@
-body{
+body {
     font-family: "Roboto", sans-serif;
 
 }
-h1{
+
+h1 {
     color: white !important;
 }
-.fondo{
+
+.fondo {
     background-color: black !important;
 }
-.logo{
+
+.logo {
     display: flex;
     padding-top: 5%;
     width: 50px;
@@ -16,33 +19,64 @@ h1{
 
 }
 
-.logo:hover{
-	-webkit-animation: flash 1.5s;
-	animation: flash 2.5s;
+.logo:hover {
+    -webkit-animation: flash 1.5s;
+    animation: flash 2.5s;
 
-}@-webkit-keyframes flash {
-        0% {
-            opacity: .4;
-        }
-        100% {
-            opacity: 1;
-        }
 }
+
+@-webkit-keyframes flash {
+    0% {
+        opacity: .4;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+.modal-content{
+    width:fit-content !important;
+}
+
+.wame {
+    color: #111111;
+    border-radius: 15px !important;
+    border-style: solid;
+    border-width: 2px !important;
+    font-size: 15px !important;
+    text-decoration: none;
+    display: inline-flex !important;    /* Convierte el botón en un contenedor flex */
+    align-items: center !important;     /* Centra los elementos verticalmente */
+    justify-content: center !important; /* Centra los elementos horizontalmente */
+    gap: 8px;     
+    padding: 10px 15px;           /* Crea un espacio uniforme entre el texto y el icono */
+    
+}
+
+.contactos {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
 @keyframes flash {
     0% {
         opacity: .4;
     }
+
     100% {
         opacity: 1;
     }
-    }
-.card-body{
+}
+
+.card-body {
     display: flex;
     flex-direction: column;
     justify-content: center !important;
     align-items: center !important;
 }
-.navbarUL{
+
+.navbarUL {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -50,13 +84,16 @@ h1{
     background-color: rgb(132, 23, 29);
 
 }
-.navbarUL .left{
+
+.navbarUL .left {
     float: left;
 }
-.navbarUL .right{
+
+.navbarUL .right {
     float: right;
 }
-.navbarUL li a{
+
+.navbarUL li a {
     display: block;
     color: white;
     text-align: center;
@@ -64,65 +101,150 @@ h1{
     text-decoration: none;
 
 }
-.navbarUL li a:hover {
+
+.navbarUL li a:hover,
+button:hover {
     background-color: #111111;
-  }
-
-.sect1{
-    background-color:rgba(234, 211, 177);
-}
-.sect1 :only-child{
-    margin: 1%;
 }
 
-.art1{
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-
-}
-.art1 li{
-    margin: 1%;
-    display: flex;
-    flex-direction: row;
-}
-.AboutusImg{
-    padding-left: 50px;
-
-}
-.AboutusImg img{
-    width: 400px;
-}
-.AboutusText{
-    text-align: justify;
-}
-.art1 aside{
+.sect1 {
+    background-color: #e8d3b1 !important;
     display: flex;
     flex-direction: column;
     justify-content: center !important;
     align-items: center !important;
 }
 
-.sect2{
+.sect1 :only-child {
+    margin: 1%;
+}
+
+.art1 {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.art1 li {
+    margin: 1%;
+    display: flex;
+    flex-direction: row;
+}
+
+.AboutusImg {
+    padding-left: 50px;
+
+}
+
+.AboutusImg img {
+    width: 400px;
+}
+
+.AboutusText {
+    text-align: justify;
+}
+
+.card-sect {
+    background-color: #e8d3b1 !important;
+}
+
+.art1 aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.sect2 {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
-.sect2 .card{
+
+.sect2 .card {
     margin: 3%;
 }
+
 /*media querys for responsive*/
 /* Exact height */
 
 /* Minimum height */
-@media (min-width: 480px) and (max-width:768px) {
-  .AboutusImg{
-    width: 150px!important;
-    margin:  5% 5% !important;
+@media (480px <=width<=768px) {
+    .AboutusImg {
+        width: 150px !important;
+        margin: 5% 5% !important;
 
-  }
-  .imgSize{
-    width: 150px!important;
-  }
+    }
+
+    .imgSize {
+        width: 150px !important;
+    }
+}
+
+@media (769px <=width <=1024px) {
+    .AboutusImg {
+        width: 250px !important;
+        margin: 5% 5% !important;
+
+    }
+
+    .imgSize {
+        width: 250px !important;
+    }
+}
+
+@media (1025px <=width <=1200px) {
+    .AboutusImg {
+        width: 350px !important;
+        margin: 5% 5% !important;
+
+    }
+
+    .imgSize {
+        width: 350px !important;
+    }
+}
+.form-registro {
+    width: 400px !important;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+}
+
+.grupo-input {
+    margin-bottom: 15px;
+}
+
+.grupo-input label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.grupo-input input {
+    width: 100%;
+    padding: 8px;
+     /* Importante para que el padding no desborde el ancho */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.error {
+    color: red;
+    font-size: 0.85em;
+    display: none; /* Se muestra solo cuando hay error */
+}
+
+.btn-enviar {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
